@@ -1,0 +1,47 @@
+﻿  Receiver.cpp
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(18,67): error C2664: "HANDLE CreateEventW(LPSECURITY_ATTRIBUTES,BOOL,BOOL,LPCWSTR)": невозможно преобразовать аргумент 4 из "const _Elem *" в "LPCWSTR"
+          with
+          [
+              _Elem=char
+          ]
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(18,65): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(474,1): message : см. объявление "CreateEventW"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(36,12): error C2664: "BOOL CreateProcessW(LPCWSTR,LPWSTR,LPSECURITY_ATTRIBUTES,LPSECURITY_ATTRIBUTES,BOOL,DWORD,LPVOID,LPCWSTR,LPSTARTUPINFOW,LPPROCESS_INFORMATION)": невозможно преобразовать аргумент 2 из "char *" в "LPWSTR"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(36,33): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\processthreadsapi.h(377,1): message : см. объявление "CreateProcessW"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(17,34): error C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(34,9): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(56,19): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(83,58): error C2664: "HANDLE CreateEventW(LPSECURITY_ATTRIBUTES,BOOL,BOOL,LPCWSTR)": невозможно преобразовать аргумент 4 из "const char [10]" в "LPCWSTR"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(83,47): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(474,1): message : см. объявление "CreateEventW"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(84,58): error C2664: "HANDLE CreateMutexW(LPSECURITY_ATTRIBUTES,BOOL,LPCWSTR)": невозможно преобразовать аргумент 3 из "const char [12]" в "LPCWSTR"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(84,45): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(432,1): message : см. объявление "CreateMutexW"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(90,87): error C2664: "HANDLE CreateSemaphoreW(LPSECURITY_ATTRIBUTES,LONG,LONG,LPCWSTR)": невозможно преобразовать аргумент 4 из "const char [19]" в "LPCWSTR"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(90,67): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(802,1): message : см. объявление "CreateSemaphoreW"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(91,64): error C2664: "HANDLE CreateEventW(LPSECURITY_ATTRIBUTES,BOOL,BOOL,LPCWSTR)": невозможно преобразовать аргумент 4 из "const char [13]" в "LPCWSTR"
+D:\2 kyrs\cpp\lab_4\Receiver.cpp(91,50): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(474,1): message : см. объявление "CreateEventW"
+  Sender.cpp
+D:\2 kyrs\cpp\lab_4\Sender.cpp(21,81): error C2664: "HANDLE OpenEventW(DWORD,BOOL,LPCWSTR)": невозможно преобразовать аргумент 3 из "const _Elem *" в "LPCWSTR"
+          with
+          [
+              _Elem=char
+          ]
+D:\2 kyrs\cpp\lab_4\Sender.cpp(21,79): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(501,1): message : см. объявление "OpenEventW"
+D:\2 kyrs\cpp\lab_4\Sender.cpp(22,64): error C2664: "HANDLE OpenEventW(DWORD,BOOL,LPCWSTR)": невозможно преобразовать аргумент 3 из "const char [10]" в "LPCWSTR"
+D:\2 kyrs\cpp\lab_4\Sender.cpp(22,53): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(501,1): message : см. объявление "OpenEventW"
+D:\2 kyrs\cpp\lab_4\Sender.cpp(30,67): error C2664: "HANDLE OpenMutexW(DWORD,BOOL,LPCWSTR)": невозможно преобразовать аргумент 3 из "const char [12]" в "LPCWSTR"
+D:\2 kyrs\cpp\lab_4\Sender.cpp(30,54): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(448,1): message : см. объявление "OpenMutexW"
+D:\2 kyrs\cpp\lab_4\Sender.cpp(36,94): error C2664: "HANDLE OpenSemaphoreW(DWORD,BOOL,LPCWSTR)": невозможно преобразовать аргумент 3 из "const char [19]" в "LPCWSTR"
+D:\2 kyrs\cpp\lab_4\Sender.cpp(36,74): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(517,1): message : см. объявление "OpenSemaphoreW"
+D:\2 kyrs\cpp\lab_4\Sender.cpp(37,76): error C2664: "HANDLE OpenEventW(DWORD,BOOL,LPCWSTR)": невозможно преобразовать аргумент 3 из "const char [13]" в "LPCWSTR"
+D:\2 kyrs\cpp\lab_4\Sender.cpp(37,62): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\synchapi.h(501,1): message : см. объявление "OpenEventW"
+  Создание кода...
