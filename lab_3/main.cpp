@@ -4,8 +4,7 @@
 #include <mutex>
 #include <condition_variable>
 
-using std::mutex, std::condition_variable, std::unique_lock, std::vector, std::this_thread::sleep_for,
-std::chrono::milliseconds, std::cout, std::endl, std::cin, std::thread;
+using namespace std;
 
 mutex globalMutex;
 mutex mainMutex;
@@ -14,6 +13,13 @@ mutex* localMutex;
 condition_variable* cvContinue;
 condition_variable* cvFinish;
 condition_variable* cvWait;
+
+bool checkThreads(const vector<bool>& canWork) {
+    for (bool i : canWork)
+        if (i)
+            return true;
+    return false;
+}
 
 void markerFunc(int threadIndex, vector<int>& nums) {
 
@@ -57,13 +63,6 @@ void markerFunc(int threadIndex, vector<int>& nums) {
 
         }
     }
-}
-
-bool checkThreads(const vector<bool>& canWork) {
-    for (bool i : canWork)
-        if (i)
-            return true;
-    return false;
 }
 
 int main() {
