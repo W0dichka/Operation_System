@@ -8,8 +8,6 @@
 #include <algorithm>
 #include <string>
 
-const int time = 2000;
-
 int main(int argc, char** argv) {
     HANDLE handleReadyEvent = OpenEvent(EVENT_MODIFY_STATE, FALSE, argv[1]);
     HANDLE handleStartEvent = OpenEvent(SYNCHRONIZE, FALSE, ipName.c_str());
